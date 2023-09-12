@@ -9,10 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+        'desktop': "url('/back-full.jpg')",
+        'mobile': "url('/back-clouds-mobile1.png')",
+      }
     },
   },
   plugins: [],
