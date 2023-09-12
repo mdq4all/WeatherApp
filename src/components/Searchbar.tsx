@@ -12,7 +12,7 @@ export default function Searchbar({ setWeather, setError }: Props) {
     e.preventDefault();
     const cityName = e.currentTarget.city.value.trim();
     const res = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${process.env.API_KEY}&q=${cityName}&aqi=no&days=2`
+      `https://api.weatherapi.com/v1/forecast.json?key=${process.env.API_KEY}&q=${cityName}&aqi=no&days=2`
     );
     if (!res.ok) {
       setWeather(null);

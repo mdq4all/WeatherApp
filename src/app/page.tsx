@@ -8,6 +8,7 @@ import MainData from "@/components/MainData";
 import MiddleData from "@/components/MiddleData";
 import Forecasts from "@/components/Forecasts";
 import Link from "next/link";
+import Main from "@/components/Main";
 
 export default function Home() {
   const [weather, setWeather] = useState<weatherInterface | null>(null);
@@ -21,10 +22,11 @@ export default function Home() {
           width={250}
           height={10}
           alt="logo"
-          className="p-4"
+          className="p-4 h-auto"
         />
         <Searchbar setWeather={setWeather} setError={setError} />
       </div>
+      {!weather && <Main />}
       {weather && <MainData weather={weather} />}
       {weather && <MiddleData weather={weather} />}
       {weather && (
@@ -46,6 +48,7 @@ export default function Home() {
               alt="Weather data by WeatherAPI.com"
               height={40}
               width={40}
+              className="w-auto"
             />
           </Link>
         </p>
