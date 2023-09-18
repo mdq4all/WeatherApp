@@ -7,7 +7,7 @@ interface Props {
 }
 export default function MiddleIcons({ src, alt, content }: Props) {
   return (
-    <div className="text-white grid place-content-center">
+    <div className="text-white grid justify-items-center">
       <Image src={src} width={40} height={40} alt={alt} />
       <article>{content}</article>
     </div>

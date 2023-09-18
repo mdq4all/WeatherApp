@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Main() {
   return (
-    <div className="flex items-center flex-col text-white glassmorphism py-4 gap-y-6">
+    <div className="flex items-center flex-col text-white glassmorphism py-4 gap-y-6 sm:max-w-xl sm:w-full sm:rounded-lg">
       <Image src="/another-weather-app-low-resolution-logo-white-on-transparent-background.svg" width={400} height={30} alt="logo" />
       <p className="text-xl">Powered by</p>
       <Link href="https://www.weatherapi.com/" title="Free Weather API">

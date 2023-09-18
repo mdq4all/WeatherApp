@@ -7,11 +7,11 @@ interface MainDataProps {
 
 export default function MainData({ weather }: MainDataProps) {
   return (
-    <div>
-      <h2 className="italic text-right px-4 font-bold mb-2 text-white">
+    <div className="sm:max-w-xl w-full ">
+      <h2 className="italic text-right px-4 font-bold mb-2 text-gray-400 drop-shadow-md">
         {weather.location.name}, {weather.location.country}
       </h2>
-      <div className="flex items-center p-3 gap-x-4 glassmorphism my-4 text-white">
+      <div className="flex items-center p-3 gap-x-4 glassmorphism my-4 text-white sm:rounded-lg">
         <Image
           src={`https:${weather.current.condition.icon}`}
           height={90}

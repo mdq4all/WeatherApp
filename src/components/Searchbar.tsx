@@ -26,7 +26,7 @@ export default function Searchbar({ setWeather, setError }: Props) {
 
   return (
     <form
-      className="flex items-center flex-wrap glassmorphism dark:bg-[#08182E] w-full mb-4 shadow-box dark:shadow-none"
+      className="flex items-center flex-wrap glassmorphism dark:bg-[#08182E] w-full mb-4 shadow-box dark:shadow-none sm:max-w-xl sm:rounded-lg"
       onSubmit={handleSubmit}
     >
       <div className="px-2"></div>

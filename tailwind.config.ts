@@ -9,8 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'desktop': "url('/back-full.jpg')",
-        'mobile': "url('/back-clouds-mobile1.png')",
+        'desktop': "url('/back-desktop.jpg')",
+        'desktop-cloud': "url('/back-desktop-cloudy.jpg')",
+        'desktop-rain': "url('/back-desktop-rain.jpg')",
+        'desktop-fog': "url('/back-fog-desktop.jpg')",
+        'desktop-snow': "url('/back-desktop-snow.jpg')",
+        'mobile': "url('/back-mobile.png')",
+        'mobile-cloud': "url('/back-mobile-cloudy.jpg')",
+        'mobile-rain': "url('/back-mobile-rain.jpg')",
+        'mobile-fog': "url('/back-fog-mobile.jpg')",
+        'mobile-snow': "url('/back-mobile-snow.jpg')",
       }
     },
   },

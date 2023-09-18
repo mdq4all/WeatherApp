@@ -1,4 +1,3 @@
-import { Hour } from "@/types/types";
 import Image from "next/image";
 
 interface Props {
@@ -18,6 +17,7 @@ export default function CardForecast({
         height={70}
         width={70}
         alt="icon weather"
+        className="flex items-center"
       />
       <article className="font-bold text-lg mb-2">{temperature}°</article>
       <article className="border-t-2 border-opacity-25">
